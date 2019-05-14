@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% block css %}
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+</head>
+<body>
+  <div class="admin_container padding-site">
+    <div class="h2 text-center head">
+      Админка
+    </div>
+    {% block menu %}
+      <div class="admin_menu">
+        {% include 'adminapp/includes/inc_menu.html' %}
+      </div>
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
+  </div>
+</body>
+</html>
