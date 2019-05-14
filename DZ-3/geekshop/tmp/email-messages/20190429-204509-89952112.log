@@ -1,0 +1,14 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: 
+ =?utf-8?b?0J/QvtC00YLQstC10YDQttC00LXQvdC40LUg0YPRh9C10YLQvdC+0Lkg0LfQsNC/?=
+ =?utf-8?b?0LjRgdC4IEFuZHJleQ==?=
+From: webmaster@localhost
+To: lokasan@inbox.ru
+Date: Mon, 29 Apr 2019 17:45:09 -0000
+Message-ID: <155655990905.20032.15259642272105989069@LAPTOP-B15V2B3J>
+
+Для подтверждения учетной записи Andrey на портале http://localhost:8000 перейдите по ссылке: 
+http://localhost:8000/auth/verify/lokasan@inbox.ru/f611fb567b997c272345d7f215889857b68f6942/
+-------------------------------------------------------------------------------
