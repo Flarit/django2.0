@@ -1,0 +1,27 @@
+{% load custom_tags %}
+                <ul class="ul-li">
+                    <li class="menu-li"><a href="{% url 'main' %}" class="menu" style="{% if request.resolver_match.url_name == 'main' %}color: black;     border-bottom: 3px solid #212121; font-weight: 700;{% endif %}">{{menu.main}}</a></li>
+                    <li class="menu-li"><a href="{% url 'catalogue:index' %}" class="menu" style="{% if request.resolver_match.namespace == 'catalogue' %}color: black;     border-bottom: 3px solid #212121; font-weight: 700;{% endif %}">{{menu.catalogue}}</a>
+                    {%  if request.resolver_match.namespace != 'catalogue' %}
+                        <ul class="ul-li-cat">
+                            {% for cat in prod_cat %}
+                            {% if cat.is_active != False %}
+                            <li class="">
+                            <a href="{% url 'catalogue:catalogue' cat.pk %}" class="">{{ cat.name }}</a>
+                            </li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                    </li>
+
+                    <li class="menu-li"><a href="{% url 'contacts' %}" class="menu" style="{% if request.resolver_match.url_name == 'contacts' %}color: black;     border-bottom: 3px solid #212121; font-weight: 700;{% endif %}">{{menu.contacts}}</a></li>
+                </ul>
+<a href="#" class="search"></a>
+<a href="{% url 'basket:view' %}" class="basket">
+   <span>
+       {{ request.user|basket_total_quantity }} шт
+       {{ request.user|basket_total_coster }} руб
+  </span>
+</a>
+

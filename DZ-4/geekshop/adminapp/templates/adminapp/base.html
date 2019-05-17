@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% block css %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock css %}
+    {% block js %}
+        <script src="{% static 'js/jquery-3.4.0.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    {% endblock js %}
+</head>
+<body>
+  <div class="admin_container padding-site">
+    <div class="h2 text-center head">
+      Админка
+    </div>
+    {% block menu %}
+      <div class="admin_menu">
+        {% include 'adminapp/includes/inc_menu.html' %}
+      </div>
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
+  </div>
+</body>
+</html>

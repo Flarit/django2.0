@@ -1,0 +1,18 @@
+[
+  {
+    "category": "Смартфоны",
+    "name": "Смартфон Samsung Galaxy S9 Plus 256GB",
+    "image": "products_images/s1.jpg",
+    "short_desc": "смартфон с Android 8.0",
+    "price": 42990,
+    "quantity": 6
+  },
+  {
+    "category": "Смартфоны",
+    "name": "Смартфон Sony Xperia XZ2 Compact",
+    "image": "products_images/s2.jpg",
+    "short_desc": "смартфон с Android 8.0",
+    "price": 32990,
+    "quantity": 10
+  }
+]
